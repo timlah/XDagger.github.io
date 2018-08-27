@@ -1,4 +1,8 @@
-<header id="header" class="js-header">
+{%- capture header_classes -%}
+  main-header js-header {% if include.image %}main-header--image{% endif %} {% if include.hide_background != true %}main-header--bg{% endif %}
+{%- endcapture -%}
+
+<header id="header" class="{{ header_classes }}">
     <div id="logo">
         <a href="{% tl home %}">
             <img src="{{ '/assets/images/logo.svg' | absolute_url }}" height="70" alt="Dagger" />
@@ -45,7 +49,7 @@
             <li class="js-nav-has-sublevel nav-lang">
                 <input class="display-toggle" type="checkbox" id="nav-lang-toggle">
                 <label class="nav-sublevel-label js-nav-sublevel-label" for="nav-lang-toggle" tabindex="0">
-                  <i class="ion-ios-globe nav-sublevel-icon"></i><span class="nav-sublevel-text">{{ site.translations[site.lang].nav.current_language }}</span>
+                  <i class="nav-sublevel-icon"></i><span class="nav-sublevel-text">{{ site.translations[site.lang].nav.current_language }}</span>
                 </label>
                 <div id="nav-lang" class="sf-mega nav-sublevel js-nav-sublevel">
                   <ul class="nav-sublevel-grid">
@@ -70,4 +74,4 @@
     </nav>
     <div class="nav-overlay"></div>
 </header>
-<div class="header-bg"></div>
+{% if include.use_space %}<div class="main-header-padding"></div>{% endif %}

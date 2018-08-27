@@ -89,6 +89,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #bdbdbd;
 }
 
+.bg--darkest {
+  background: $color-primary-shade-2;
+}
+
 // Utility classes
 
 .display-toggle {
@@ -105,10 +109,10 @@ h1, h2, h3, h4, h5, h6 {
 
 $header-height: 92px;
 $header-height-scrolled: 72px;
-$header-bg-scrolled: rgba(0, 0, 0, 0.7);
+$header-bg-scrolled: $color-primary-shade;
 $header-bp: 1400px;
 
-#header {
+.main-header {
   display: flex;
   align-items: center;
   position: fixed;
@@ -118,8 +122,7 @@ $header-bp: 1400px;
   right: 0;
   padding: 30px 15px;
   z-index: 997;
-  background: 0;
-  transition: height 0.5s, background 0.5s;
+  transition: height 0.5s;    
 
   @include bp-min($header-bp) {
     padding: 30px 60px;
@@ -129,10 +132,41 @@ $header-bp: 1400px;
     height: $header-height-scrolled;
     background: $header-bg-scrolled;
   }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $color-primary-shade;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  &.header-scrolled::before {
+    opacity: 1;
+  }
+
+  &--bg {
+    background-color: $color-primary-shade;
+    background-position: center;
+  }
+
+  &--image {
+    background-image: linear-gradient(355deg, $color-primary-shade 30%, rgba($color-primary-shade, 0.1)),
+                      url(../images/banner/1.jpg);
+  }
+}
+
+.main-header-padding {
+  width: 100%;
+  height: $header-height;
 }
 
 #header.header-scrolled {
-  background: $header-bg-scrolled;
   padding: 20px 15px;
   height: $header-height-scrolled;
 
@@ -152,12 +186,6 @@ $header-bp: 1400px;
   @media (max-width: 768px) {
     max-height: 60px;
   }
-}
-
-.header-bg {
-  width: 100%;
-  height: $header-height;
-  background: #000 url("../images/banner/1.jpg") center;
 }
 
 
@@ -300,7 +328,7 @@ $nav-breakpoint: 1300px;
 
   @include bp-min($nav-breakpoint) {
     margin-top: 0;
-    margin-left: 100px !important; 
+    margin-left: 60px !important; 
   }
 
   .nav-sublevel-icon {
@@ -324,7 +352,7 @@ $nav-breakpoint: 1300px;
     margin-left: 30px;
 
     @include bp-min($nav-breakpoint) {
-      margin-left: 16px;
+      margin-left: 24px;
     }
   }
 
@@ -364,6 +392,13 @@ $nav-breakpoint: 1300px;
       text-transform: uppercase;
     }
   }
+
+  .nav-sublevel-icon {
+    background: url('/assets/images/icon-language.svg') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+  }
 }
 
 .nav-main > li {
@@ -390,11 +425,14 @@ $nav-breakpoint: 1300px;
   
   @include bp-min($nav-breakpoint) {
     position: absolute;
-    top: calc(100% + 15px);
+    top: calc(100% + 16px);
     left: 0;
     min-width: 180px;
-    box-shadow: inset 0 2px $color-primary;
-    background: $header-bg-scrolled;
+    background: #fafafa;
+    box-shadow: 0 40px 80px rgba(50,50,93,.09), 
+                0 15px 35px rgba(50,50,93,.15), 
+                0 5px 15px rgba(0,0,0,.1);
+    border-radius: 0 0 2px 2px;
   }
 
   @at-root .no-js .display-toggle:checked ~ & {
@@ -402,7 +440,12 @@ $nav-breakpoint: 1300px;
     opacity: 1;
   }
 
-  li {
+  a,
+  label {
+    color: $color-primary-shade;
+  }
+
+  > li {
     @include bp-min($nav-breakpoint) {
       margin: 0 10px;
     }
@@ -545,14 +588,12 @@ $nav-breakpoint: 1300px;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #000;
-  padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #111;
+  background: $color-primary-shade;
   padding: 60px 0 30px 0;
 }
 

@@ -1,2 +1,5 @@
 $color-blue: #428bca;
+$color-blue-dark: #14141e;
 $color-primary: $color-blue;
+$color-primary-shade: $color-blue-dark;
+$color-primary-shade-2: darken($color-primary-shade, 5%);

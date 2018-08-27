@@ -19,6 +19,7 @@ new WOW({
   function scrollTrigger(triggerPoint, callbackBelowTrigger, callbackOverTrigger) {
     var isPastTriggerPoint;
 
+    // run once instantly
     if (isOver()) {
       callbackOverTrigger();
       isPastTriggerPoint = true;
@@ -75,7 +76,7 @@ new WOW({
     }
   );
 
-  var header = document.querySelector('#header');
+  var header = document.querySelector('.js-header');
   scrollTrigger(
     10,
     function() {
@@ -86,6 +87,7 @@ new WOW({
     }
   );
 })();
+
 
 /**
  * Accessibility

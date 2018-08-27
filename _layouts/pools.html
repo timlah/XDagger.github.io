@@ -2,8 +2,8 @@
     <link href="{{ '/assets/css/pools.css' | absolute_url }}" rel="stylesheet">
 </head>
 
-<body>
-{% include header.html %}
+<body class="bg--darkest">
+{% include header.html use_space=true %}
 <main id="main">
   <section class="pool">
     <img class="pool__graphic pool__graphic--bg" src="{{ '/assets/images/banner/2.png' | absolute_url }}">
@@ -37,7 +37,7 @@
       <polyline points="624,151.5 667.5,183.5 667.7,219.3 663.7,288.7 711,321 781.5,305 762.7,278.3 "/>
     </svg>
 
-    <header class="section-header">
+    <header class="section-header wow fadeInUp">
       <h3>{% t pools.title %}</h3>
       <p>{% t pools.description %}</p>
     </header>
