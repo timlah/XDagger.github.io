@@ -6,9 +6,46 @@ new WOW({
   resetAnimation: false
 }).init();
 
+// Optimized scroll listener
+// src: https://developer.mozilla.org/en-US/docs/Web/Events/scroll
+
+var scrollListener = (function() {
+
+  var ticking = false;
+  var callbacks = [];
+  var eventScrollY = window.scrollY;
+
+  window.addEventListener("scroll", function(e) {
+
+    if (!ticking) {
+      eventScrollY = window.scrollY;
+
+      window.requestAnimationFrame(function() {
+        for (var i = 0; i < callbacks.length; i++) {
+          callbacks[i](eventScrollY, e);
+        }
+
+        ticking = false;
+      });
+       
+      ticking = true;
+    }
+  });
+
+  function add(callback) {
+    callbacks.push(callback);
+  }
+
+  return {
+    add: add
+  };
+
+})();
+
 /**
  * Execute callbacks depending on user scroll position
  */
+
 
 (function() {
   /**
@@ -46,23 +83,7 @@ new WOW({
       } 
     }
 
-    // Optimized scroll listener
-    // src: https://developer.mozilla.org/en-US/docs/Web/Events/scroll
-    var ticking = false;
-    var last_known_scroll_position = 0;
-
-    window.addEventListener("scroll", function() {
-      last_known_scroll_position = window.scrollY;
-
-      if (!ticking) {
-        window.requestAnimationFrame(function() {
-          handleCallback();
-          ticking = false;
-        });
-         
-        ticking = true;
-      }
-    });
+    scrollListener.add(handleCallback);
   }
 
   var $backToTop = $('.back-to-top');
@@ -76,17 +97,40 @@ new WOW({
     }
   );
 
+  // Header movement
+
   var header = document.querySelector('.js-header');
+  var startScroll = window.scrollY;
+
   scrollTrigger(
     10,
     function() {
-      header.classList.remove('header-scrolled');
+      header.classList.remove('is-scrolled');
     },
     function() {
-      header.classList.add('header-scrolled');
+      header.classList.add('is-scrolled');
     }
   );
+
+  scrollListener.add(function(eventScrollY) {
+    var transform = (startScroll - window.scrollY) / 2;
+    var headerHeight = 184;
+
+    if (transform < -headerHeight) {
+      transform = -headerHeight;
+      startScroll = window.scrollY - (headerHeight * 2);
+    }
+
+    if (transform > 0) {
+      startScroll = window.scrollY
+      transform = 0;
+    }
+
+    header.style.transform = 'translate3d(0, ' + transform + 'px, 0)'; 
+  });
+
 })();
+
 
 
 /**

@@ -89,8 +89,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #bdbdbd;
 }
 
+.bg--darklight {
+  background: $color-primary-shade;
+}
+
 .bg--darkest {
-  background: $color-primary-shade-2;
+  background: $color-primary-shade3;
 }
 
 // Utility classes
@@ -141,22 +145,35 @@ $header-bp: 1400px;
     left: 0;
     width: 100%;
     height: 100%;
-    background: $color-primary-shade;
+    background: $color-primary-shade2;
     opacity: 0;
     transition: opacity 0.5s;
   }
 
-  &.header-scrolled::before {
-    opacity: 1;
+  &.is-scrolled {
+    padding: 20px 15px;
+    height: $header-height-scrolled;
+
+    @include bp-min($header-bp) {
+      padding: 20px 60px;
+    }
+
+    &::before {
+      opacity: 1;
+    }
+
+    &.is-scrolled-hidden {
+      transform: translateY(-100%);
+    }
   }
 
   &--bg {
-    background-color: $color-primary-shade;
+    background-color: $color-primary-shade2;
     background-position: center;
   }
 
   &--image {
-    background-image: linear-gradient(355deg, $color-primary-shade 30%, rgba($color-primary-shade, 0.1)),
+    background-image: linear-gradient(355deg, $color-primary-shade2 30%, rgba($color-primary-shade2, 0.1)),
                       url(../images/banner/1.jpg);
   }
 }
@@ -164,15 +181,6 @@ $header-bp: 1400px;
 .main-header-padding {
   width: 100%;
   height: $header-height;
-}
-
-#header.header-scrolled {
-  padding: 20px 15px;
-  height: $header-height-scrolled;
-
-  @include bp-min($header-bp) {
-    padding: 20px 60px;
-  }
 }
 
 #header #logo {
@@ -442,7 +450,7 @@ $nav-breakpoint: 1300px;
 
   a,
   label {
-    color: $color-primary-shade;
+    color: $color-primary-shade2;
   }
 
   > li {
@@ -593,7 +601,7 @@ $nav-breakpoint: 1300px;
 }
 
 #footer .footer-top {
-  background: $color-primary-shade;
+  background: $color-primary-shade2;
   padding: 60px 0 30px 0;
 }
 
