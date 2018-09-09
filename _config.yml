@@ -13,8 +13,8 @@ community_wallets:
 # Jekyll configuration
 
 
-url: https://xdag.io
-baseurl: ""
+baseurl: /XDagger.github.io
+url: https://timlah.github.io
 
 paginate: 7
 paginate_path: "/blog/page:num"
