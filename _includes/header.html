@@ -1,4 +1,8 @@
-<header id="header" class="js-header">
+{%- capture header_classes -%}
+  main-header js-header {% if include.image %}main-header--image{% endif %} {% if include.hide_background != true %}main-header--bg{% endif %}
+{%- endcapture -%}
+
+<header id="header" class="{{ header_classes }}">
     <div id="logo">
         <a href="{% tl home %}">
             <img src="{{ '/assets/images/logo.svg' | absolute_url }}" height="70" alt="Dagger" />

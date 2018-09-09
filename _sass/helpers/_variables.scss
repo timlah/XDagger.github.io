@@ -1,8 +1,13 @@
 $color-blue: #428bca;
 $color-green: #18d36e;
+$color-blue-dark: #14141e;
 $color-primary: $color-blue;
+$color-primary-shade: lighten($color-blue-dark, 5%);
+$color-primary-shade2: $color-blue-dark;
+$color-primary-shade3: darken($color-primary-shade, 5%);
 
 $color-link-hover: $color-green;
 
 $bp-bootstrap-md: 768px;
 $bp-bootstrap-lg: 992px;
+
