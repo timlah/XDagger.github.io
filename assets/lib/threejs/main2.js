@@ -87,7 +87,7 @@ function init(object) {
       }
     }
   });
-  animationObject.animate(10.0, {ease: Power0.easeIn, repeat:-1});
+  animationObject.animate(40.0, {ease: Power0.easeIn, repeat:-1});
   root.add(animationObject);
 
   var animationSurrounding = new Animation({
