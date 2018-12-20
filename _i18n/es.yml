@@ -37,6 +37,8 @@ countries:
   russia: Rusia
   china: China
   lithuania: Lituania
+  usa: Estados Unidos
+  australia: Australia
 
 # Pages
 
@@ -83,6 +85,8 @@ home:
       content: Aplicación de consola para MacOS.
     - title: Miner de GPU para MacOS
       content: Miner de GPU para MacOS desarrollado por Jonano.
+    - title: iOS wallet
+      content: Beta version. Users have to accept F&F INTERNATIONAL TRADING CO., LTD as a trusted source.
     - title: Cartera Android
       content: Para Android 5.0 y superiores.
     - title: Código fuente
