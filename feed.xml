@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <link href="https://timlah.github.io/XDagger.github.io/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="https://timlah.github.io/XDagger.github.io/blog/" rel="alternate" type="text/html" hreflang="en" />
+  <updated>2018-12-20T01:45:45+00:00</updated>
+  <id>https://timlah.github.io/XDagger.github.io/</id>
+  <title type="html">XDAG</title>
+  <subtitle>A new DAG-based cryptocurrency</subtitle>
+  <author>
+      <name>Xdag.io</name>
+      <email>communitymanager@xdag.io</email>
+  </author><entry xml:lang="en">
+      <title type="html">Community fund rewards for November</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/12/08/community-fund-rewards-november.html" rel="alternate" type="text/html" title="Community fund rewards for November" />
+      <published>2018-12-08T15:00:00+00:00</published>
+      <updated>2018-12-08T15:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/12/08/community-fund-rewards-november</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/12/08/community-fund-rewards-november.html">Dear community, the rewards for the month of November 2018 have been decided.
+
+The rewards are based on Github contributions and notable community involvement. Transaction IDs are linked to each name.
+The amounts reflect a 0.05$ USD valuation per XDAG, this is to maintain payments and the fund until the market can reflect a stronger price, then we will revert back to market value when this happens.
+
+For their constant help and daily involvement in the development of XDAG and its core code,
+the following people are rewarded 40000 XDAG (120000 in total):
+
+
+  Frozen
+  Evgeniy
+  Sgaragagghu
+
+
+For his constant help and a daily involvement in the development of the project,
+the following person is rewarded 20000 XDAG (20000 in total):
+
+
+  Jimmy
+
+
+For his contributions and fixes applied to the new windows wallet, the following person is rewarded 10000 XDAG (10000 in total):
+
+
+  Toneysui
+
+
+For his contributions to the core code, the following person is rewarded 5000 XDAG (5000 in total):
+
+
+  AnythingTechPro
+
+
+For his contributions to our marketing campaign, the following people is rewarded 5000 XDAG (5000 in total):
+
+
+  One8zero3
+
+
+Combined total: 160000 XDAG.
+
+Thank you, everyone, for being a part of the community and contributing to XDAG’s progress.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">Dear community, the rewards for the month of November 2018 have been decided.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/community-fund-rewards-20181208.png" /></entry><entry xml:lang="en">
+      <title type="html">Giveaway winners</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/11/19/Giveaway-winners.html" rel="alternate" type="text/html" title="Giveaway winners" />
+      <published>2018-11-19T22:00:00+00:00</published>
+      <updated>2018-11-19T22:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/11/19/Giveaway-winners</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/11/19/Giveaway-winners.html">Congratulations to @ggav_in on Twitter and Sérgio on Facebook.
+
+They will both be sent 5000XDAG and a XDAG t-shirt.
+
+Our last giveaway proved to be a success, with more impressions and engagements than our previous giveaways. Hopefully we will be able to continue doing these with even more reach in the future. Ultimately, we would like to thank all participants and congratulate the winners.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">Read about our last giveaway.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/giveaway-winners-2.png" /></entry><entry xml:lang="en">
+      <title type="html">XDAG v 0.3.0 release notes</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/11/15/xdag-v030-release.html" rel="alternate" type="text/html" title="XDAG v 0.3.0 release notes" />
+      <published>2018-11-15T19:00:00+00:00</published>
+      <updated>2018-11-15T19:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/11/15/xdag-v030-release</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/11/15/xdag-v030-release.html">We are pleased to announce that XDAG v 0.3.0 is released.
+
+
+  XDAG v0.3.0 release
+  Github
+
+
+Change list:
+
+
+  Optimization: Rewrite DNET for better performance and stability.
+  Optimization: Reuse extra blocks to reduce blocks.
+  Optimization: Changed the way that orphan blocks are managed for better performance.
+  Optimization: Add index for internal blocks to speed up storage loading and synchronization.
+  Optimization: Previous code has been optimized to improve performance.
+  Optimization: Mined blocks which did not become main blocks are removed from the network.
+  Refactor JSON-RPC to fix issues and implement required features.
+  Fix: New blocks are not generated until the pool is synchronized with the network.
+  Fix: segfault issues has been fixed to improve stability.
+  Fix: Memory leak issues has been fixed to improve stability.
+  Fix: Temporary file size issue has been fixed.
+  Fix: An issue with disconnection of miners has been fixed.
+  Fix: A payment issue has been fixed.
+  Fix: Wallet issue when using wallet in MacOS Mojave environment has been fixed.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">XDAG v 0.3.0 release notes</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/v030.png" /></entry><entry xml:lang="en">
+      <title type="html">Community fund rewards for October</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/11/07/community-fund-rewards-october.html" rel="alternate" type="text/html" title="Community fund rewards for October" />
+      <published>2018-11-07T08:00:00+00:00</published>
+      <updated>2018-11-07T08:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/11/07/community-fund-rewards-october</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/11/07/community-fund-rewards-october.html">Dear community, the rewards for the month of October 2018 have been decided.
+
+The rewards are based on Github contributions and notable community involvement. Transaction IDs are linked to each name.
+The amounts reflect a 0.05$ USD valuation per XDAG, this is to maintain payments and the fund until the market can reflect a stronger price, then we will revert back to market value when this happens.
+
+For their constant help and daily involvement in the development of XDAG and its core code,
+the following people are rewarded 40000 XDAG (120000 in total):
+
+  Frozen
+  Sgaragagghu
+  Evgeniy
+
+
+For their contributions and fixes applied to the mobile wallet, the following person is rewarded 20000 XDAG (20000 in total):
+
+  ssyijiu
+
+
+For their contributions on Crowdin or Discord for the translation of the Android App, the following people are rewarded 2500 XDAG (15000 in total):
+
+  kuroki1987
+  zmzhe
+  zenty
+  Cyan_inf
+  One8zero3
+  Dimitri
+
+
+Combined total: 155000 XDAG.
+
+Thank you, everyone, for being a part of the community and contributing to XDAG’s progress.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">Dear community, the rewards for the month of October 2018 have been decided.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/community-fund-rewards.jpg" /></entry><entry xml:lang="en">
+      <title type="html">Community fund rewards for September</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/10/09/community-fund-rewards-september.html" rel="alternate" type="text/html" title="Community fund rewards for September" />
+      <published>2018-10-09T08:00:00+00:00</published>
+      <updated>2018-10-09T08:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/10/09/community-fund-rewards-september</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/10/09/community-fund-rewards-september.html">Dear community, the rewards for the month of September 2018 have been decided.
+
+The rewards are based on Github contributions and notable community involvement. Transaction IDs are linked to each name.
+The amounts reflect a 0.05$ USD valuation per XDAG, this is to maintain payments and the fund until the market can reflect a stronger price, then we will revert back to market value when this happens.
+
+For their constant help and daily involvement in the development of XDAG and its core code, 
+the following people are rewarded 40000 XDAG (120000 in total):
+
+
+  Frozen
+  Sgaragagghu
+  Evgeniy
+
+
+For their contributions and fixes applied to the mobile wallet, the following people are rewarded 20000 XDAG (40000 in total):
+
+
+  ssyijiu
+  Bill
+
+
+For their constant help and a daily involvement in the development of the project, 
+the following person is rewarded 20000 XDAG (20000 in total):
+
+
+  Jimmy
+
+
+Combined total: 180000 XDAG.
+Thank you everyone for being a part of the community and contributing to XDAG’s progress.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">Dear community, the rewards for the month of September 2018 have been decided.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/community-fund-rewards.jpg" /></entry><entry xml:lang="en">
+      <title type="html">September report</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/09/27/september-report.html" rel="alternate" type="text/html" title="September report" />
+      <published>2018-09-27T15:00:00+00:00</published>
+      <updated>2018-09-27T15:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/09/27/september-report</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/09/27/september-report.html">Exchanges
+
+We want to ensure people that we continue working on being added to new exchanges, with the next releases of our software helping us reach that goal. We also want to remind you that XDAG is trading on four exchanges. Two of these exchanges cater to Chinese customers only.
+
+
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  
+
+
+Marketing
+
+Recently, XDAG has been added on coingecko.com. Once XDAG reaches a higher volume on these exchanges, a price chart will be available.
+
+
+
+Furthermore, the XDAG team has been in contact with exchanges listed on coinmarketcap.com and coingecko.com. Hopefully these exchanges have a large enough interest to add XDAG trading pairs. Once any new information regarding this matter is available, we will share that as soon as possible.
+
+We also want to thank you for your continued support. Mining continues to be a stronghold which spurs XDAG forward.
+
+Giveaway
+Our last giveaway goodies have been received by the winners. Thanks to Antonio (Facebook winner) who shared this image with us.
+
+
+
+Development
+
+Our developers have worked a lot this month. They have made more than 100 commits for review and testing, which means that the next XDAG release will continue to improve the network. It is very important to us that the XDAG software is improved upon each release.
+
+If you want to follow our developers work, you can find it on GitHub.
+
+Lastly, we would like to share our thanks again. Thank you to everyone for their continued support. And finally, many thanks to our great developers who continue to improve the XDAG software.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">Exchanges, marketing, giveaways and development. A report on XDAG's progress in September 2018.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/september-report.jpg" /></entry><entry xml:lang="en">
+      <title type="html">Community fund rewards for August</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/09/02/community-fund-rewards-august.html" rel="alternate" type="text/html" title="Community fund rewards for August" />
+      <published>2018-09-02T08:00:00+00:00</published>
+      <updated>2018-09-02T08:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/09/02/community-fund-rewards-august</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/09/02/community-fund-rewards-august.html">Dear community, the rewards for the month of August 2018 have been decided.
+
+The rewards are based on Github contributions and  notable community involvement. Transaction IDs are linked to each name.
+The amounts reflect a 0.05$ USD valuation per XDAG, this is to maintain payments and the fund until the market can reflect a stronger price, then we will revert back to market value when this happens.
+
+For their constant help and daily involvement in the development of XDAG and its core code, 
+the following people are rewarded 40000 XDAG (80000 in total):
+
+
+  Frozen
+  Sgaragagghu
+
+
+For his constant help and daily involvement in the development of XDAG and its core code, 
+the following person is rewarded 13333 XDAG:
+
+
+  Evgeniy
+
+
+For his contributions and work done on and for the iOS wallet, the following person is rewarded  20000 XDAG:
+
+  Solar
+
+
+For his contributions and fixes applied to the mobile wallet, the following person is rewarded 10000 XDAG:
+
+  ssyijiu
+
+
+For their constant help and a daily involvement in the development of the project, 
+the following people are rewarded 20000 XDAG (40000 in total):
+
+  Mathsw
+  Jimmy
+
+
+For helping out others on our social channels, completing light development tasks, or generally contributing to the development of XDAG, the following people are rewarded 7500 XDAG (45000 in total):
+
+  rubencm (Discord help/light code task)
+  13ecause (Discord Mod/Instagram Maintainer/Publicist)
+  hughchiu (Telegram maintainer)
+  merklin (Discord help)
+  cyan_inf (Facebook page maintainer)
+  One8zero3 (Discord Mod/Marketing)
+
+
+Combined total: 208333 XDAG.
+Thank you everyone for being a part of the community and contributing to XDAG’s progress.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">Dear community, the rewards for the month of August 2018 have been decided.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/community-fund-rewards.jpg" /></entry><entry xml:lang="en">
+      <title type="html">Congratulations to our Facebook and Twitter giveaway winners</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/08/24/giveaway-winners.html" rel="alternate" type="text/html" title="Congratulations to our Facebook and Twitter giveaway winners" />
+      <published>2018-08-24T17:00:00+00:00</published>
+      <updated>2018-08-24T17:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/08/24/giveaway-winners</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/08/24/giveaway-winners.html">As we draw the conclusion of our giveaways on Facebook/Twitter, we would like say congratulations to Antonio (Facebook) &amp;amp; yiranhen13 (Twitter). Both both participants will receive 1000 XDAG and one XDAG novelty shirt.
+
+
+  Facebook Transaction Tx
+  Twitter Transaction Tx
+
+
+The promotion was ran from 08/10/2018 to 08/19/2018 on our Facebook/Twitter platforms and was considered to be a success, we are trying to grow our online presence, and will be running more promotions, contest, giveaways in the upcoming future. Stay tuned for future updates, and a big thank you to all whom participated.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">As we draw the conclusion of our giveaways on Facebook/Twitter, we would like say congratulations to Antonio (Facebook) and yiranhen13 (Twitter).</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/giveaway-winners.jpg" /></entry><entry xml:lang="en">
+      <title type="html">Progress in China — iWeb conference and XDAG meetup</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/08/16/iweb-conference-and-xdag-meetup.html" rel="alternate" type="text/html" title="Progress in China — iWeb conference and XDAG meetup" />
+      <published>2018-08-16T12:00:00+00:00</published>
+      <updated>2018-08-16T12:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/08/16/iweb-conference-and-xdag-meetup</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/08/16/iweb-conference-and-xdag-meetup.html">iWeb Conference
+
+We are pleased to announce XDAG has taken part in the 2018 iWeb conference held at the Beijing International Convention Center on August 12th.
+
+This year, blockchain technology is one of the primary themes of the iWeb conference. Developers from multiple tech industries gather there to discuss and share ideas about blockchain, and blockchain technology.
+
+We are excited to announce one of our community developers Frozen,  was representing us at the convention. He had the opportunity while at the conference to, set up a booth, do some networking, generate interest in XDAG, as well as setting up a few mobile wallets and handing out some XDAG while he was there to a few lucky souls!!
+
+A special thank you to all who contributed XDAG so Airdrops could be made possible this weekend:
+bbx.com, coinbat.com, feipool.xyz, vspool.com, xdagcn.com, xdag.in, 大胖鱼, 王备, Calvin.
+
+
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  
+
+
+XDAG Meetup
+
+We are also pleased to announce we held our first XDAG development meetup in Beijing, China on August 11th. Some of the key discussion points were:
+
+  The logic of XDAG
+  Implementing mining through the Python language
+  How to achieve DAG structure in XDAG
+  Double spending processing and high TPS
+  Current development status
+  Progressing the roadmap and what the future holds for XDAG
+
+
+The meeting ended with a Q&amp;amp;A session.
+
+We are currently trying to implement Python XDAG to display the logic of XDAG, a few devs are going to join us to implement Golang XDAG, which development will be starting very soon. There will be three developers working on Golang XDAG with the goal to implement enhanced pool node functionality.
+
+On this note Frozen has said that XDAG will be very busy over the next month or so with 7 activities for XDAG each weekend working up until the end of September in different cities. We will be sure to keep you all posted on these events! The convention was considered a success with a considerable turnout and with many conversations had on behalf of XDAG, as well as the XDAG Development meetup attended by Frozen.
+
+The community would like to say many thanks for representing us this weekend as well A big thanks to bCamp for providing meeting rooms and a variety of snacks for the team! Thanks bCamp for the long-term support of the XDAG community! This is all very exciting news and the team is very excited about welcoming more contributors to the project, the more we grow, firm up our technology, work hard on our social platforms and outreach, the moons the limit.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">We are pleased to announce XDAG has taken part in the 2018 iWeb conference held at the Beijing International Convention Center on August 12th.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/iweb2018/iweb.png" /></entry><entry xml:lang="en">
+      <title type="html">Community fund rewards for July</title>
+      <link href="https://timlah.github.io/XDagger.github.io/2018/08/06/community-fund-rewards-july.html" rel="alternate" type="text/html" title="Community fund rewards for July" />
+      <published>2018-08-06T10:00:00+00:00</published>
+      <updated>2018-08-06T10:00:00+00:00</updated>
+      <id>https://timlah.github.io/XDagger.github.io/2018/08/06/community-fund-rewards-july</id>
+      <content type="html" xml:base="https://timlah.github.io/XDagger.github.io/2018/08/06/community-fund-rewards-july.html">Dear community, the rewards for the month of July 2018 have been decided.
+
+The rewards are based on Github contributions and  notable community involvement. Transaction IDs are linked to each name.
+The amounts reflect a rough average value of the currency in the last 5 days of the month.
+
+For their constant help and daily involvement in the development of XDAG and its core code, 
+the following people are rewarded 51282 XDAG (153846 in total):
+
+  Evgeniy
+  Frozen
+  Sgaragagghu
+
+
+For their constant help and a daily involvement in the development of the project, 
+the following people are rewarded 12820 XDAG (51280 in total):
+
+  amazingMan2017
+  ssyijiu
+  Mathsw
+  Jimmy
+
+
+For helping out others on our social channels, completing light development tasks, or generally contributing to the development of XDAG, 
+the following people are rewarded 9615 XDAG (67305 in total):
+
+  rubencm (Discord help/light code task)
+  13ecause (Discord help)
+  hughchiu (CN telegram maintainer)
+  merklin (Discord help)
+  cyan_inf (Facebook page maintainer)
+  Arkadiy (BTCT thread maintainer)
+  One8zero3 (Discord help)
+
+
+For paying $25 to create a Google Play Developer account to upload our Android software, the following person is granted 641 XDAG (641 in total):
+
+  Sofar
+
+
+Combined total: 273072 XDAG.
+Thank you everyone for being a part of the community and contributing to XDAG’s progress.</content><author>
+          <name>Xdag.io</name><email>communitymanager@xdag.io</email></author><summary type="html">Dear community, the rewards for the month of July 2018 have been decided.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://timlah.github.io/XDagger.github.io/assets/images/posts/community-fund-rewards.jpg" /></entry></feed>
