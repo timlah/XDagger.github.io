@@ -137,16 +137,34 @@ home:
         - date: Augusti 2018
           events:
             - Release av XDAG Android och iOS plånböcker 
-    - timeframe: Kommande
-      dates: 
-        - date: ETA 2018
+    - timeframe: Q4 2018
+      dates:
+        - date: November 2018
           events:
-            - Skapa RPC för att kunna lista XDAG på flera marknader
-        - date: Framtida planer
+            - Release of XDAG wallet 0.3.0
+    - timeframe: Q1 2019
+      dates:
+        - date: January 2019
           events:
-            - Expandera utvecklingsteamet
-            - Marknadsföra XDAG
-  community: Community
+            - XDAG listed on 8 exchanges
+            - Development on Golang Version and Anonymous Trading
+    - timeframe: Future
+      dates:
+        - date: ETA 2019 Q1
+          events:
+            - RPC Development
+            - Hash algorithm adjustment
+            - Full Wallet
+        - date: ETA 2019 Q2
+          events:
+            - Anonymous Trading
+        - date: Future plans
+          events:
+            - Smart Contract
+            - Expansion of the development team
+            - Social media and marketing
+
+community: Community
 
 
 news:

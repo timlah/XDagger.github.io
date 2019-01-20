@@ -137,16 +137,34 @@ home:
         - date: Aout 2018
           events:
             - Parution des portefeuille Android et iOS 
+    - timeframe: Q4 2018
+      dates:
+        - date: November 2018
+          events:
+            - Release of XDAG wallet 0.3.0
+    - timeframe: Q1 2019
+      dates:
+        - date: January 2019
+          events:
+            - XDAG listed on 8 exchanges
+            - Development on Golang Version and Anonymous Trading
     - timeframe: Future
-      dates: 
-        - date: ETA 2018
+      dates:
+        - date: ETA 2019 Q1
           events:
-            - Dés que nous aurons finalisé le dévelopement de notre RPC, la comunautée vas faire les démarches pour etre listé sur d'autre échanges
-        - date: A venir
+            - RPC Development
+            - Hash algorithm adjustment
+            - Full Wallet
+        - date: ETA 2019 Q2
           events:
-            - Aggrandissement de l'équipe de dévelopeurs
-            - Réseau sociaux et marketing
-  community: Communauté
+            - Anonymous Trading
+        - date: Future plans
+          events:
+            - Smart Contract
+            - Expansion of the development team
+            - Social media and marketing
+  
+community: Communauté
 
 
 news:

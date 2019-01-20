@@ -147,17 +147,34 @@ home:
         - date: 2018年8月
           events:
             - XDAG安卓和iOS钱包发布
-    - timeframe: 未来
-      dates: 
-        - date: ETA 2018
+    - timeframe: Q4 2018
+      dates:
+        - date: November 2018
           events:
-            - 在完成RPC的开发之后，社区将推动交易所上市
-        - date: 未来计划
+            - Release of XDAG wallet 0.3.0
+    - timeframe: Q1 2019
+      dates:
+        - date: January 2019
           events:
-            - 在完成RPC的开发之后，社区将推动交易所上市
-            - 建立社交媒体和推广
-  community: 社区
+            - XDAG listed on 8 exchanges
+            - Development on Golang Version and Anonymous Trading
+    - timeframe: Future
+      dates:
+        - date: ETA 2019 Q1
+          events:
+            - RPC Development
+            - Hash algorithm adjustment
+            - Full Wallet
+        - date: ETA 2019 Q2
+          events:
+            - Anonymous Trading
+        - date: Future plans
+          events:
+            - Smart Contract
+            - Expansion of the development team
+            - Social media and marketing
 
+community: 社区
 
 news:
   title: 新闻
